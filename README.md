@@ -2,36 +2,36 @@
 
 > MovieSeries App est une application web conçue pour gérer une vaste collection de films et séries. L'application vise à offrir aux utilisateurs un accès facile à des informations détaillées sur leurs films et séries préférés, ainsi qu'à permettre aux administrateurs de gérer le contenu et les utilisateurs efficacement. Les fonctionnalités incluent la gestion des films et séries, la création de listes de visionnage, l'ajout de favoris et l'administration des utilisateurs.
 
-#Administrateur User Stories :
+# Administrateur User Stories :
 
-##Connexion de l'Administrateur :
+## Connexion de l'Administrateur :
 Connexion et déconnexion via email et mot de passe.
 Inscription de nouveaux administrateurs.
 Réinitialisation de mot de passe.
 
-##Gestion des Films :
+## Gestion des Films :
 Ajouter, afficher, voir les détails, mettre à jour et supprimer des films.
 
-##Gestion des Séries :
+## Gestion des Séries :
 Ajouter, afficher, voir les détails, mettre à jour et supprimer des séries.
 
 #Visiteur User Stories :
 ##Inscription et Connexion :
 S'inscrire et se connecter pour gérer les listes de visionnage et les préférences.
 
-#Utilisateur User Stories :
-##Gestion des Favoris :
+# Utilisateur User Stories :
+## Gestion des Favoris :
 Ajouter des films ou séries aux favoris.
 Voir la liste des films ou séries disponibles.
 Voir les détails d'un film ou série.
 
-#Technologies utilisées :
+# Technologies utilisées :
 
 Spring Core pour l'injection de dépendances et la gestion des composants.
 Spring MVC pour la construction de l'application web et la gestion des requêtes HTTP.
 Hibernate pour l'ORM (Object-Relational Mapping).
 
-#Conception UML :
+# Conception UML :
 
 La conception UML de l'application MovieSeriesTV comprendra les diagrammes suivants :
 
