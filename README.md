@@ -39,7 +39,7 @@ Diagramme de cas d'utilisation (Use Case Diagram) :
 ![Capture d'écran 2024-06-03 194637](https://github.com/THSK4U/MovieSeries-App-Application-web/assets/157622490/353a7ab8-8b7a-40af-a4dc-8e2c4d2b78c7)
 
 Diagramme de classes (Class Diagram) :
-![Capture d'écran 2024-06-03 194543](https://github.com/THSK4U/MovieSeries-App-Application-web/assets/157622490/19a499b1-e4dc-40c7-ae76-412813e84e48)
+![Capture d'écran 2024-06-04 143708](https://github.com/THSK4U/MovieSeries-App-Application-web/assets/157622490/68eb0e8c-63b1-4893-b730-5c861840c16d)
 
 Diagramme de séquence (Sequence Diagram) :
 
