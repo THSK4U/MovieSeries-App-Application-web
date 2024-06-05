@@ -10,7 +10,11 @@
         <properties>
             <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/MoviesSeries"/>
             <property name="hibernate.connection.username" value="postgres"/>
+
+            <property name="hibernate.connection.password" value="admin"/>
+
             <property name="hibernate.connection.password" value="264850"/>
+
             <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.hbm2ddl.auto" value="update"/>
