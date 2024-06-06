@@ -5,7 +5,7 @@
              version="3.0">
     <persistence-unit name="default">
 
-        <class>com.firstexample.model.Users</class>
+        <class>com.firstexample.model.Admin</class>
 
         <properties>
             <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/MoviesSeries"/>
