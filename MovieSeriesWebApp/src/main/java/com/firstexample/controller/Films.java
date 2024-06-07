@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 @RequestMapping("/Films")
-public class Film {
+public class Films{
 
     @Autowired
     private FilmService FilmService;
@@ -25,27 +25,26 @@ public class Film {
 
     @PostMapping("/add")
     public String addFilm(
-            @RequestParam("titre") String titre,
-            @RequestParam("description") String description,
-            @RequestParam("dateSortie") String dateSortie,
-            @RequestParam("duree") int duree,
-            @RequestParam("genre") String genre,
-            @RequestParam("realisateur") String realisateur,
-            @RequestParam("acteurs") String acteurs,
-            @RequestParam("note") double note,
-            @RequestParam("image") String image,
+            @RequestParam("Title") String titre,
+            @RequestParam("Description") String description,
+            @RequestParam("DateDeSortie") String dateSortie,
+            @RequestParam("Duree") int duree,
+            @RequestParam("Genre") String genre,
+            @RequestParam("Realisateur") String realisateur,
+            @RequestParam("Acteurs") String acteurs,
+            @RequestParam("Note") double note,
             Model model) {
 
         Film film = new Film();
-        film.s.(titre);
-        Film.setDescription(description);
-        Film.setDateSortie(dateSortie);
-        Film.setDuree(duree);
-        Film.setGenre(genre);
-        Film.setRealisateur(realisateur);
-        Film.setActeurs(acteurs);
-        Film.setNote(note);
-        Film.setImage(image);
+
+        film.setTitre("TESTdfg HIBERNATE");
+        film.setDescription("A test film for Hibernate.");
+        film.setDateDeSortie("20fgg-01-01");
+        film.setDuree(120);
+        film.setGenre("Drama");
+        film.setRealisateur("dsf sdg");
+        film.setActeurs("Actor1, Actor2, Actor3");
+        film.setNote(8.5);
 
         FilmService.ajouterFilm(Film);
 
