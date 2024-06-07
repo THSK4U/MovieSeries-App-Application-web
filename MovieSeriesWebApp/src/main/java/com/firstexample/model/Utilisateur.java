@@ -1,4 +1,4 @@
-package com.ms.model;
+package com.firstexample.model;
 
 import javax.persistence.*;
 

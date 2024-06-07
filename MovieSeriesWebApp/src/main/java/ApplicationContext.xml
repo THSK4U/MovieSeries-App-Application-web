@@ -11,8 +11,8 @@
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
 
-    <bean id="dao" class="com.ms.dao.UtilisateurDao"></bean>
-    <bean id="dao" class="com.ms.model.Utilisateur"></bean>
+    <bean id="dao" class="com.firstexample.dao.UtilisateurDao"></bean>
+    <bean id="dao" class="com.firstexample.model.Utilisateur"></bean>
 
 
 </beans>

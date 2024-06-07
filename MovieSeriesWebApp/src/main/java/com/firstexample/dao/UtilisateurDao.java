@@ -1,4 +1,4 @@
-package com.ms.dao;
+package com.firstexample.dao;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
 import org.springframework.stereotype.Repository;
 
-import com.ms.model.Utilisateur;
+import com.firstexample.model.Utilisateur;
 
 @Repository
 public class UtilisateurDao {

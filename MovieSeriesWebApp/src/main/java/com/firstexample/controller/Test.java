@@ -1,8 +1,8 @@
-package com.ms;
+package com.firstexample.controller;
 
 import java.util.List;
-import com.ms.dao.UtilisateurDao;
-import com.ms.model.Utilisateur;
+import com.firstexample.dao.UtilisateurDao;
+import com.firstexample.model.Utilisateur;
 
 public class Test {
 

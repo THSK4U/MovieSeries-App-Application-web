@@ -16,6 +16,6 @@
 
         <property name="hibernate.hbm2ddl.auto">update</property>
 
-        <mapping class="com.ms.model.Utilisateur"/>
+        <mapping class="com.firstexample.model.Utilisateur"/>
     </session-factory>
 </hibernate-configuration>
