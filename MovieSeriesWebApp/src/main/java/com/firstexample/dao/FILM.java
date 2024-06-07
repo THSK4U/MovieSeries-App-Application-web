@@ -12,10 +12,18 @@ public class FILM {
         EntityManagerFactory factory = Persistence.createEntityManagerFactory("default");
         EntityManager entityManager = factory.createEntityManager();
 
-        Film title = new Film();
-        title.setTitre("TEST HIBERNATE");
+        Film film = new Film();
+
+        film.setTitre("TESTdfg HIBERNATE");
+        film.setDescription("A test film for Hibernate.");
+        film.setDateDeSortie("20fgg-01-01");
+        film.setDuree(120);
+        film.setGenre("Drama");
+        film.setRealisateur("dsf sdg");
+        film.setActeurs("Actor1, Actor2, Actor3");
+        film.setNote(8.5);
         entityManager.getTransaction().begin();
-        entityManager.persist(title);
+        entityManager.persist(film);
 
         entityManager.getTransaction().commit();
         System.out.println("Insteretion succesfull");
