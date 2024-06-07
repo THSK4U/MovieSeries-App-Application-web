@@ -6,7 +6,7 @@ import javax.persistence.*;
 public class Moderateur {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private int id_moderateur;
 
     private String nom;
 
@@ -18,13 +18,20 @@ public class Moderateur {
     public Moderateur() {
     }
 
-    // Getters and Setters
-    public Long getId() {
-        return id;
+    public Moderateur(String nom, int id_moderateur, String email, String password) {
+        this.nom = nom;
+        this.id_moderateur = id_moderateur;
+        this.email = email;
+        this.password = password;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    // Getters and Setters
+    public int getId_moderateur() {
+        return id_moderateur;
+    }
+
+    public void setId_moderateur(int id_moderateur) {
+        this.id_moderateur = id_moderateur;
     }
 
     public String getNom() {

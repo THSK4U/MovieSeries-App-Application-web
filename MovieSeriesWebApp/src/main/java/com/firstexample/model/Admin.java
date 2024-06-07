@@ -6,6 +6,10 @@ import javax.persistence.*;
 public class Admin {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    private int id_admin;
+
+
+
     private String nom  ;
 
     private String email ;
@@ -17,10 +21,19 @@ public class Admin {
 
     }
 
-    public  Admin(String nom , String email , String password){
+    public  Admin(int id_admin ,String nom , String email , String password){
+        this.id_admin = id_admin;
         this.nom = nom ;
         this.email = email;
         this.password = password;
+    }
+
+    public int getId_admin() {
+        return id_admin;
+    }
+
+    public void setId_admin(int id_admin) {
+        this.id_admin = id_admin;
     }
 
     public String getNom(){
