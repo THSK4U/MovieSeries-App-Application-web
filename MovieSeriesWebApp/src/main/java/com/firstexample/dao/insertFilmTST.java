@@ -21,7 +21,7 @@ public class insertFilmTST {
 
         Film film = new Film();
 
-        film.setTitre("aaaaaaaaaa HIBERNATE");
+        film.setTitre("aaaa232aaaaaa HIBERNATE");
         film.setDescription("A test film for Hibernate.");
         film.setDateDeSortie("20fgg-01-01");
         film.setDuree(120);
