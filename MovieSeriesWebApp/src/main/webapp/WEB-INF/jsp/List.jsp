@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page import="com.ms.model.Utilisateur" %>
+<%@ page import="com.firstexample.model.Utilisateur" %>
 <%@ page import="java.util.List" %>
-<%@ page import="com.ms.dao.UtilisateurDao" %>
+<%@ page import="com.firstexample.dao.UtilisateurDao" %>
 <!DOCTYPE html>
 <html>
 <head>

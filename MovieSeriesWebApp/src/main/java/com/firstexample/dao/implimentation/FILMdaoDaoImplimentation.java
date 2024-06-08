@@ -14,7 +14,7 @@ public class FILMdaoDaoImplimentation implements FILMdao {
     private EntityManager entityManager;
 
     public FILMdaoDaoImplimentation() {
-        this.entityManagerFactory = Persistence.createEntityManagerFactory("test");
+        this.entityManagerFactory = Persistence.createEntityManagerFactory("default");
         this.entityManager = this.entityManagerFactory.createEntityManager();
     }
 

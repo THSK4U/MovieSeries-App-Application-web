@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MovieSeriesWebApp/Budget.iml" filepath="$PROJECT_DIR$/MovieSeriesWebApp/Budget.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/MovieSeries-App-Application-web.iml" filepath="$PROJECT_DIR$/.idea/MovieSeries-App-Application-web.iml" />
     </modules>
   </component>

@@ -3,6 +3,7 @@ package com.firstexample.controller;
 
 import com.firstexample.model.Film;
 //import com.firstexample.service.FilmService;
+import com.firstexample.services.FilmService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class Films{
 
     @Autowired
-    private FilmService FilmService;
+    private FilmService FILMdao;
 
     @GetMapping("/create")
     public String showAddFilmForm() {
@@ -46,7 +47,7 @@ public class Films{
         film.setActeurs("Actor1, Actor2, Actor3");
         film.setNote(8.5);
 
-        FilmService.ajouterFilm(Film);
+        FILMdao.ajouterMovie(film);
 
         model.addAttribute("message", "Film ajouté avec succès");
         return "redirect:/Films/create";
