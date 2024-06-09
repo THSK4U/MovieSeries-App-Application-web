@@ -13,6 +13,9 @@
 
     <bean id="dao" class="com.firstexample.dao.UtilisateurDao"></bean>
     <bean id="dao" class="com.firstexample.model.Utilisateur"></bean>
+    <bean id="dao" class="com.firstexample.model.Film"></bean>
+    <bean id="dao" class="com.firstexample.dao.FILMdao" abstract="true"></bean>
+
 
 
 </beans>

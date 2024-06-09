@@ -4,10 +4,13 @@ package com.firstexample.dao.implimentation;
 
 import com.firstexample.dao.FILMdao;
 import com.firstexample.model.Film;
+import org.springframework.stereotype.Repository;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
+@Repository
 public class FILMdaoDaoImplimentation implements FILMdao {
 
     private EntityManagerFactory entityManagerFactory;
@@ -18,15 +21,12 @@ public class FILMdaoDaoImplimentation implements FILMdao {
         this.entityManager = this.entityManagerFactory.createEntityManager();
     }
 
-    public FILMdaoDaoImplimentation(jakarta.persistence.EntityManagerFactory entityManagerFactory, jakarta.persistence.EntityManager entityManager) {
-    }
-
     @Override
-    public Film ajouterFilm(Film Film) {
+    public Film ajouterFilm(Film film) {
         entityManager.getTransaction().begin();
-        entityManager.persist(Film);
+        entityManager.persist(film);
         entityManager.getTransaction().commit();
-        return Film;
+        return film;
     }
 
     @Override
