@@ -15,9 +15,9 @@
 
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/jsp/"/>
-        <property name="suffix" value=".jsp"/>
+        <property          name="suffix" value=".jsp"/>
 
-    </bean>
+    </bea
     <bean id="message" class="com.firstexample.services.FilmService"> </bean>
 
 </beans>
