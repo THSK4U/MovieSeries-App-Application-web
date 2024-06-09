@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import com.firstexample.dao.ModerateurDao;
 import com.firstexample.model.Moderateur;
@@ -31,6 +32,15 @@ public class AdminController {
     public String save(@ModelAttribute Moderateur moderateur, Model model) {
             mode.saveData(moderateur);
             model.addAttribute("Smessage", "enregistré avec succès !");
-            return "redirect:/AdminUsers/";
+            return "redirect:/AdminUsers";
+    }
+    
+  
+    @GetMapping("/deleteUser/{id}")
+    public String deleteUser(@PathVariable("id") Long id, Model model) {
+        System.out.println(id);
+        mode.deleteData(id);
+        model.addAttribute("Dmessage", "Supprimé avec succès !");
+        return "redirect:/AdminUsers";
     }
 }
