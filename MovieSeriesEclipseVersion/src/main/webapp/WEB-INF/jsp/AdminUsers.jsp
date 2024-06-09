@@ -1,6 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%@ page import="com.firstexample.model.Moderateur" %>
+    <%@ page import="java.util.List" %>
+    <%@ page import="com.firstexample.dao.ModerateurDao" %>
+    
     
 <!DOCTYPE html>
 <html lang="en">
@@ -167,10 +170,14 @@
 							</thead>
 
 							<tbody>
-							<c:forEach var="mode" items="${mode}">
+							<%
+							ModerateurDao moderateurDao = new ModerateurDao();
+        List<Moderateur> moderateur = moderateurDao.getAllData();
+        for (Moderateur u : moderateur) {
+        %>
 								<tr>
 									<td>
-										<div class="catalog__text">${mode.id}</div>
+										<div class="catalog__text"><%= u.getId() %></div>
 									</td>
 									<td>
 										<div class="catalog__user">
@@ -178,32 +185,31 @@
 												<img src="img/user.svg" alt="">
 											</div>
 											<div class="catalog__meta">
-												<h3>Tess Harper</h3>
-												<span>email@email.com</span>
+												<h3><%= u.getNom() %></h3>
+												<span><%= u.getEmail() %></span>
 											</div>
 										</div>
 									</td>
 									<td>
-										<div class="catalog__text">Username</div>
+										<div class="catalog__text"><%= u.getNom() %></div>
 									</td>
 									<td>
-										<div class="catalog__text catalog__text--green">Approved</div>
+										<div class="catalog__text catalog__text--green"><%= u.getRole() %></div>
 									</td>
 									<td>
 										<div class="catalog__btns">
-											<button type="button" data-bs-toggle="modal" class="catalog__btn catalog__btn--banned" data-bs-target="#modal-status">
-												<i class="ti ti-lock"></i>
-											</button>
 											<a href="edit-user.html" class="catalog__btn catalog__btn--edit">
 												<i class="ti ti-edit"></i>
 											</a>
-											<button type="button" data-bs-toggle="modal" class="catalog__btn catalog__btn--delete" data-bs-target="#modal-delete">
-												<i class="ti ti-trash"></i>
-											</button>
+											 <a href="deleteUser/<%= u.getId() %>" class="catalog__btn catalog__btn--delete">
+                   							 <i class="ti ti-trash"></i>
+                							</a>
 										</div>
 									</td>
 								</tr>
-								</c:forEach>
+								 <%
+            }
+        %>
 							</tbody>
 						</table>
 					</div>
@@ -263,48 +269,6 @@
 		</div>
 	</div>
 	<!-- end user modal -->
-
-	<!-- status modal -->
-	<div class="modal fade" id="modal-status" tabindex="-1" aria-labelledby="modal-status" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered">
-			<div class="modal-content">
-				<div class="modal__content">
-					<form action="#" class="modal__form">
-						<h4 class="modal__title">Status change</h4>
-
-						<p class="modal__text">Are you sure about immediately change status?</p>
-
-						<div class="modal__btns">
-							<button class="modal__btn modal__btn--apply" type="button"><span>Apply</span></button>
-							<button class="modal__btn modal__btn--dismiss" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Dismiss</span></button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- end status modal -->
-
-	<!-- delete modal -->
-	<div class="modal fade" id="modal-delete" tabindex="-1" aria-labelledby="modal-delete" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered">
-			<div class="modal-content">
-				<div class="modal__content">
-					<form action="#" class="modal__form">
-						<h4 class="modal__title">User delete</h4>
-
-						<p class="modal__text">Are you sure to permanently delete this user?</p>
-
-						<div class="modal__btns">
-							<button class="modal__btn modal__btn--apply" type="button"><span>Delete</span></button>
-							<button class="modal__btn modal__btn--dismiss" type="button" data-bs-dismiss="modal" aria-label="Close"><span>Dismiss</span></button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- end delete modal -->
 
 	<!-- JS -->
 	<script src="https://raw.githack.com/THSK4U/MovieSeries-App-Application-web/main/Front-End/admin/admdd/hotflix.volkovdesign.com/admin/js/bootstrap.bundle.min.js"></script>

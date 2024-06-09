@@ -78,16 +78,15 @@ public class ModerateurDao {
 		    	}
 
 
-	public void deleteData(Utilisateur s) {
-		        // TODO Auto-generated method stub
-		        con = new Configuration().configure("hibernate.cfg.xml");
-		        factory = con.buildSessionFactory();
+	public void deleteData(Long id) {
 		        session = factory.openSession();
 		        t = session.beginTransaction();
-		        Utilisateur obj = session.get(Utilisateur.class, s.getId());
+		        Moderateur obj = session.get(Moderateur.class, id);
 		        session.delete(obj);
 		        t.commit();
+		        session.close();
 		    }
+		    
 
 	public void close() {
 		        if (factory != null) {
