@@ -55,7 +55,7 @@ public class UtilisateurController {
         Utilisateur loggedInUtilisateur = utilisateurDao.login(utilisateur.getEmail(), utilisateur.getPassword());
         if (loggedInUtilisateur != null) {
             model.addAttribute("message", "Connexion réussie !");
-            return "redirect:/utilisateurs/";
+            return "redirect:/Film";
         } else {
             model.addAttribute("Fmessage", "Échec de la connexion. Veuillez réessayer.");
             return "register";

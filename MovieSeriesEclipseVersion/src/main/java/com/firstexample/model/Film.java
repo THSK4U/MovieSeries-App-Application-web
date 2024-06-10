@@ -24,7 +24,8 @@ public class Film {
     private String acteurs;
 
     private Double note;
-
+    
+    private String cover;
 
     public Film() {
 
@@ -33,7 +34,7 @@ public class Film {
         this.id = id;
     }
 
-    public Film(Long id, String titre, String description, String dateDeSortie, Integer duree, String genre, String realisateur, String acteurs, Double note) {
+    public Film(Long id, String titre, String description, String dateDeSortie, Integer duree, String genre, String realisateur, String acteurs, Double note, String cover) {
         this.id = id;
         this.titre = titre;
         this.description = description;
@@ -43,8 +44,9 @@ public class Film {
         this.realisateur = realisateur;
         this.acteurs = acteurs;
         this.note = note;
+        this.cover = cover;
     }
-    public Film(String titre, String description, String dateDeSortie, Integer duree, String genre, String realisateur, String acteurs, Double note) {
+    public Film(String titre, String description, String dateDeSortie, Integer duree, String genre, String realisateur, String acteurs, Double note, String cover) {
         this.titre = titre;
         this.description = description;
         this.dateDeSortie = dateDeSortie;
@@ -53,6 +55,7 @@ public class Film {
         this.realisateur = realisateur;
         this.acteurs = acteurs;
         this.note = note;
+        this.cover = cover;
     }
     public Long getId() {
         return id;
@@ -125,4 +128,11 @@ public class Film {
     public void setNote(Double note) {
         this.note = note;
     }
+	public String getCover() {
+		return cover;
+	}
+	public void setCover(String cover) {
+		this.cover = cover;
+	}
+    
 }

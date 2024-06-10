@@ -69,7 +69,7 @@
 	<!-- end header -->
 
 	<!-- home -->
-	<section class="home">
+	<section class="home home--hero">
 		<div class="container">
 			<div class="row">
 				<!-- home title -->
@@ -78,9 +78,9 @@
 				</div>
 				<!-- end home title -->
 
-				<!-- home carousel -->
+				<!-- hero carousel -->
 				<div class="col-12">
-					<div class="home__carousel splide splide--home">
+					<div class="hero splide splide--hero">
 						<div class="splide__arrows">
 							<button class="splide__arrow splide__arrow--prev" type="button">
 								<i class="ti ti-chevron-left"></i>
@@ -89,122 +89,61 @@
 								<i class="ti ti-chevron-right"></i>
 							</button>
 						</div>
-
+						
 						<div class="splide__track">
 							<ul class="splide__list">
 								<li class="splide__slide">
-									<div class="item item--hero">
-										<div class="item__cover">
-											<img src="https://raw.githack.com/THSK4U/MovieSeries-App-Application-web/main/Front-End/hotflix.volkovdesign.com/main/img/covers/cover12.jpg" alt="">
-											<a href="details.html" class="item__play">
-												<i class="ti ti-player-play-filled"></i>
-											</a>
-											<span class="item__rate item__rate--green">8.4</span>
-											<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button>
-										</div>
-										<div class="item__content">
-											<h3 class="item__title"><a href="details.html">The Edge of Tomorrow</a></h3>
-											<span class="item__category">
+									<div class="hero__slide" data-bg="https://raw.githack.com/THSK4U/MovieSeries-App-Application-web/main/Front-End/hotflix.volkovdesign.com/main/img/bg/slide__bg-1.jpg">
+										<div class="hero__content">
+											<h2 class="hero__title">Savage Beauty <sub class="green">9.8</sub></h2>
+											<p class="hero__text">A brilliant scientist discovers a way to harness the power of the ocean's currents to create a new, renewable energy source. But when her groundbreaking technology falls into the wrong hands, she must race against time to stop it from being used for evil.</p>
+											<p class="hero__category">
 												<a href="#">Action</a>
+												<a href="#">Drama</a>
+												<a href="#">Comedy</a>
+											</p>
+											<div class="hero__actions">
+												<a href="details.html" class="hero__btn">
+													<span>Watch now</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li class="splide__slide">
+									<div class="hero__slide" data-bg="amazon.com/images/M/MV5BY2Y1ZWEyNjgtYTc3NC00YmZiLTk4ZGItZDViM2U0Nzk0MWQzXkEyXkFqcGdeQXVyNTkxMDU1Njg@._V1_FMjpg_UX330_.jpg">
+										<div class="hero__content">
+											<h2 class="hero__title">From the Other Side <sub class="yellow">6.9</sub></h2>
+											<p class="hero__text">In a world where magic is outlawed and hunted, a young witch must use her powers to fight back against the corrupt authorities who seek to destroy her kind.</p>
+											<p class="hero__category">
+												<a href="#">Adventure</a>
 												<a href="#">Triler</a>
-											</span>
+											</p>
+											<div class="hero__actions">
+												<a href="details.html" class="hero__btn">
+													<span>Watch now</span>
+												</a>
+											</div>
 										</div>
 									</div>
 								</li>
 
 								<li class="splide__slide">
-									<div class="item item--hero">
-										<div class="item__cover">
-											<img src="img/covers/cover2.jpg" alt="">
-											<a href="details.html" class="item__play">
-												<i class="ti ti-player-play-filled"></i>
-											</a>
-											<span class="item__rate item__rate--green">7.1</span>
-											<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button>
-										</div>
-										<div class="item__content">
-											<h3 class="item__title"><a href="details.html">Benched</a></h3>
-											<span class="item__category">
-												<a href="#">Comedy</a>
-											</span>
-										</div>
-									</div>
-								</li>
-
-								<li class="splide__slide">
-									<div class="item item--hero">
-										<div class="item__cover">
-											<img src="img/covers/cover8.jpg" alt="">
-											<a href="details.html" class="item__play">
-												<i class="ti ti-player-play-filled"></i>
-											</a>
-											<span class="item__rate item__rate--green">7.9</span>
-											<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button>
-										</div>
-										<div class="item__content">
-											<h3 class="item__title"><a href="details.html">Green Hell</a></h3>
-											<span class="item__category">
-												<a href="#">Romance</a>
+									<div class="hero__slide" data-bg="amazon.com/images/M/MV5BYjMzZDBiZTYtYWY5Ni00N2ZkLTlhZjgtOTQ1MWVmNGIzNjg5XkEyXkFqcGdeQXVyNDQ5MzEyMTg@._V1_FMjpg_UX342_.jpg">
+										<div class="hero__content">
+											<h2 class="hero__title">Endless Horizon <sub class="red">6.2</sub></h2>
+											<p class="hero__text">When a renowned archaeologist goes missing, his daughter sets out on a perilous journey to the heart of the Amazon rainforest to find him. Along the way, she discovers a hidden city and a dangerous conspiracy that threatens the very balance of power in the world.</p>
+											<p class="hero__category">
+												<a href="#">Action</a>
 												<a href="#">Drama</a>
-											</span>
-										</div>
-									</div>
-								</li>
-
-								<li class="splide__slide">
-									<div class="item item--hero">
-										<div class="item__cover">
-											<img src="img/covers/cover9.jpg" alt="">
-											<a href="details.html" class="item__play">
-												<i class="ti ti-player-play-filled"></i>
-											</a>
-											<span class="item__rate item__rate--yellow">6.8</span>
-											<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button>
-										</div>
-										<div class="item__content">
-											<h3 class="item__title"><a href="details.html">Survival Spliton</a></h3>
-											<span class="item__category">
-												<a href="#">Comedy</a>
-												<a href="#">Drama</a>
-											</span>
-										</div>
-									</div>
-								</li>
-
-								<li class="splide__slide">
-									<div class="item item--hero">
-										<div class="item__cover">
-											<img src="img/covers/cover13.jpg" alt="">
-											<a href="details.html" class="item__play">
-												<i class="ti ti-player-play-filled"></i>
-											</a>
-											<span class="item__rate item__rate--green">9.1</span>
-											<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button>
-										</div>
-										<div class="item__content">
-											<h3 class="item__title"><a href="details.html">The Chebod</a></h3>
-											<span class="item__category">
-												<a href="#">Drama</a>
-											</span>
-										</div>
-									</div>
-								</li>
-
-								<li class="splide__slide">
-									<div class="item item--hero">
-										<div class="item__cover">
-											<img src="img/covers/cover5.jpg" alt="">
-											<a href="details.html" class="item__play">
-												<i class="ti ti-player-play-filled"></i>
-											</a>
-											<span class="item__rate item__rate--yellow">6.7</span>
-											<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button>
-										</div>
-										<div class="item__content">
-											<h3 class="item__title"><a href="details.html">Shadow</a></h3>
-											<span class="item__category">
-												<a href="#">Drama</a>
-											</span>
+												<a href="#">Triler</a>
+											</p>
+											<div class="hero__actions">
+												<a href="details.html" class="hero__btn">
+													<span>Watch now</span>
+												</a>
+											</div>
 										</div>
 									</div>
 								</li>
@@ -212,10 +151,11 @@
 						</div>
 					</div>
 				</div>
-				<!-- end home carousel -->
+				<!-- hero carousel -->
 			</div>
 		</div>
 	</section>
+	<!-- end home -->
 	<!-- end home -->
 
 	<!-- section -->

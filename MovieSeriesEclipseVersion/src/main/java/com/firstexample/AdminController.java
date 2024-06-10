@@ -31,7 +31,7 @@ public class AdminController {
     @GetMapping("/saveUsers")
     public String save(@ModelAttribute Moderateur moderateur, Model model) {
             mode.saveData(moderateur);
-            model.addAttribute("Smessage", "enregistré avec succès !");
+            model.addAttribute("Fmessage", "enregistré avec succès !");
             return "redirect:/AdminUsers";
     }
     
@@ -40,7 +40,7 @@ public class AdminController {
     public String deleteUser(@PathVariable("id") Long id, Model model) {
         System.out.println(id);
         mode.deleteData(id);
-        model.addAttribute("Dmessage", "Supprimé avec succès !");
+        model.addAttribute("Fmessage", "Supprimé avec succès !");
         return "redirect:/AdminUsers";
     }
 }

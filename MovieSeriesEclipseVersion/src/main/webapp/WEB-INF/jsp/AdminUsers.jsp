@@ -84,42 +84,18 @@
 				</li>
 
 				<li class="sidebar__nav-item">
-					<a href="catalog.html" class="sidebar__nav-link"><i class="ti ti-movie"></i> <span>Catalog</span></a>
+					<a href="catalog.html" class="sidebar__nav-link"><i class="ti ti-movie"></i> <span>Films</span></a>
 				</li>
 
+				<li class="sidebar__nav-item">
+					<a href="comments.html" class="sidebar__nav-link"><i class="ti ti-message"></i> <span>Series</span></a>
+				</li>
 				<li class="sidebar__nav-item">
 					<a href="users.html" class="sidebar__nav-link sidebar__nav-link--active"><i class="ti ti-users"></i> <span>Users</span></a>
 				</li>
 
 				<li class="sidebar__nav-item">
-					<a href="comments.html" class="sidebar__nav-link"><i class="ti ti-message"></i> <span>Comments</span></a>
-				</li>
-
-				<li class="sidebar__nav-item">
-					<a href="reviews.html" class="sidebar__nav-link"><i class="ti ti-star-half-filled"></i> <span>Reviews</span></a>
-				</li>
-
-				<li class="sidebar__nav-item">
-					<a href="settings.html" class="sidebar__nav-link"><i class="ti ti-settings"></i> <span>Settings</span></a>
-				</li>
-
-				<!-- dropdown -->
-				<li class="sidebar__nav-item">
-					<a class="sidebar__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="ti ti-files"></i> <span>Pages</span> <i class="ti ti-chevron-down"></i></a>
-
-					<ul class="dropdown-menu sidebar__dropdown-menu">
-						<li><a href="add-item.html">Add item</a></li>
-						<li><a href="edit-user.html">Edit user</a></li>
-						<li><a href="signin.html">Sign In</a></li>
-						<li><a href="signup.html">Sign Up</a></li>
-						<li><a href="forgot.html">Forgot password</a></li>
-						<li><a href="404.html">404 Page</a></li>
-					</ul>
-				</li>
-				<!-- end dropdown -->
-
-				<li class="sidebar__nav-item">
-					<a href="https://hotflix.volkovdesign.com/main/index.html" class="sidebar__nav-link"><i class="ti ti-arrow-left"></i> <span>Back to HotFlix</span></a>
+					<a href="/MovieSeries" class="sidebar__nav-link"><i class="ti ti-arrow-left"></i> <span>Back to HotFlix</span></a>
 				</li>
 			</ul>
 		</div>
@@ -154,7 +130,7 @@
 					</div>
 				</div>
 				<!-- end main title -->
-					${Smessage}
+      				<p style="color:green">${Fmessage}</p>
 				<!-- users -->
 				<div class="col-12">
 					<div class="catalog catalog--1">
@@ -171,7 +147,7 @@
 
 							<tbody>
 							<%
-							ModerateurDao moderateurDao = new ModerateurDao();
+		ModerateurDao moderateurDao = new ModerateurDao();
         List<Moderateur> moderateur = moderateurDao.getAllData();
         for (Moderateur u : moderateur) {
         %>
